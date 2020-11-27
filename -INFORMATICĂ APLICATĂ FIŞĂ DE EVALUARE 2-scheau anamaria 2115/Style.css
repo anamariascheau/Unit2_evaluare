@@ -1,0 +1,41 @@
+
+h1 
+{
+  border: 5px solid black;
+  margin: 20px 40px 60px 90px;
+  background-color: #f5bf89;
+  font-family:"verdana";
+  color:#a2a2c3;
+  font-size:30px
+}
+
+a
+{
+  position: absolute;
+  top: 70px;
+}
+
+h3
+{
+  font-size:140%;
+  color:#4563a1;
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+}
+
+
+table, th, td 
+{
+	border: 2px solid #663366;
+	text-align:center;
+	 border: 3px solid #663366;
+	 padding: 1px;
+}
+
+
+.myDiv 
+{ 
+	border: 2px outset red;
+	background-color:  #ccf2ff;    
+ 
+}

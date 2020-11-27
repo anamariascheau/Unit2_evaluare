@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>FIȘĂ DE LUCRU: INFORMATICĂ APLICATĂ UNIT2</title>
+<link rel="stylesheet" type="text/css" href="Style.css">
+</head>
+<body>
+
+<h1>Scheau Anamaria</h1>
+<a href="Scheau.Li.Anamaria@utcluj.didatec.ro">Scheau.Li.Anamaria@utcluj.didatec.ro</a>
+<h3><b><i>Specificatii tehnice ale statiei principale de lucru</b></i></h3>
+
+<table style="width:60%">
+  <tr>
+    <th>Denumire</th>
+    <th>Producator</th> 
+	<th>Parametri</th>
+  </tr>
+  <tr>
+    <td>Procesor Intel® Core™ i7-1065G7 </td>
+    <td> Intel® </td>
+	<td><ul> <li> Frecventa nominala:	1.3 GHz</li>
+	         <li> Numar nuclee:	4</li>
+			 <li> Arhitectura:	Ice Lake</li>
+			 <li> Procesor grafic integrat	Intel® Iris™ Plus Graphics</li>
+	</ul></td>
+  </tr>
+  <tr>
+    <td>Placa Video : nVidia GeForce MX</td>
+    <td>nVIDIA</td>
+	<td><ul> <li> Model placa video:	MX250</li>
+	         <li> Tip placa video:	Dedicata</li>
+			 <li> Capacitate memorie video:	4096MB</li>
+			 <li> Tehnologii placa video:	DirectX 12 GeForce Experience</li>
+	</ul></td>
+  </tr>
+  <tr>
+    <td>Display</td>
+    <td>hp</td>
+	<td><ul> <li> Diagonala display:	14 inch</li>
+	         <li> Rezolutie:	1920 x 1080</li>
+			 <li> Format display:	Full HD</li>
+			 <li> Luminozitate: 	220 niti</li>
+	</ul></td>
+  </tr>
+</table>
+
+<div class="myDiv">
+<h3><b><i>Structura Retelei</b></i></h3>
+<img id="img" width="500" height="303" src="img.PNG">
+<h3><b><i>Cracteristici Conexiune retea</b></i></h3>
+<ol type="a">
+  <li>Adresa fizia(MAC): 14-F6-D8-22-31-98</li>
+  <li>Adresa IPv4: 192.168.1.104 </li>
+  <li>Link- adresa IPv6 locala: fe80::891e:34c:edc2:5032%4</li>
+  <li>Banda de retea: 5 GHz </li>
+  <li>Canal de retea: 36 </li>
+  <li>Viteza legarturii:234/195 (Mbps)</li>
+</ol> 
+</div>
+
+
+<h3 ondblclick="showSlides()"> Utilizarea resurselor</h3>
+<div class="slideshow-container">
+<div class="mySlides fade">
+  <div class="numbertext">1 / 6</div>
+ <img id="imag" width="400" height="203" src="b.png">
+ </div>
+ 
+ <div class="mySlides fade">
+  <div class="numbertext">2 / 6</div>
+ <img id="imag"width="400" height="203" src="c.png">
+ </div>
+ 
+ <div class="mySlides fade">
+  <div class="numbertext">3 / 6</div>
+ <img id="imag" width="400" height="203"src="d.png">
+ </div>
+ 
+ <div class="mySlides_fade">
+  <div class="numbertext">4 / 6</div>
+ <img id="imag" width="400" height="203" src="e.png">
+ </div>
+ 
+ <div class="mySlides fade">
+  <div class="numbertext">5 / 6</div>
+ <img id="imag"width="400" height="203"  src="f.png">
+ </div>
+ 
+ <div class="mySlides fade">
+  <div class="numbertext">6 / 6</div>
+ <img id="imag"width="400" height="203" src="g.png">
+ </div>
+ <br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+ 
+ 
+ <script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 3000); // Change image every 3 seconds
+}
+</script>
+
+</body>
+</html>
